@@ -39,10 +39,12 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi 
-
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-# Rbenv =======================================================================
+# RBENV =======================================================================
 eval "$(rbenv init -)"
+
+# POSTGRESQL ==================================================================
+alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+alias pgstop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
