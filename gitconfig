@@ -14,5 +14,10 @@
   status = auto
 [core]
   editor = vim
+  excludesfile = /opt/boxen/config/git/gitignore
 [push]
-  default = simple
+  default = current
+[hub]
+  protocol = https
+[credential]
+  helper = /opt/boxen/bin/boxen-git-credential
