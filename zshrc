@@ -42,8 +42,8 @@ export LC_ALL=en_US.UTF-8
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-+# Boxen =======================================================================
- +[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
+# Boxen =======================================================================
+[ -f /opt/boxen/env.sh ] && source /opt/boxen/env.sh
 
 # POSTGRESQL ==================================================================
 alias pgstart='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
